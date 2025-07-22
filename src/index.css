@@ -1,0 +1,48 @@
+body {
+  background-color: #fffbeb;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.wrapper {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 500px; /* 고정 너비 */
+  max-width: 100%; /* 반응형 유지 */
+  min-height: 400px; /* 최소 높이 설정 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-ad {
+  display: none; /* Hide by default on smaller screens */
+}
+
+@media (min-width: 1200px) {
+  .side-ad {
+    display: block; /* Show on screens wider than 1200px */
+  }
+}
